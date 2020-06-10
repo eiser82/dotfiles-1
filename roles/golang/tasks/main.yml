@@ -1,9 +1,9 @@
-- name: Install dep apt package
-  apt:
-    name: go-dep
-  become: yes
-  become_method: sudo
-  become_user: root
+# - name: Install dep apt package
+#   apt:
+#     name: go-dep
+#   become: yes
+#   become_method: sudo
+#   become_user: root
 
 - name: Add golang plugin to asdf
   command: "${HOME}/.asdf/bin/asdf plugin-add golang"
